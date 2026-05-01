@@ -34,12 +34,12 @@ Currently looking for full-time roles in **Data Science, AI Engineering, and Gen
 
 | Project | Stack | Key Result |
 |---------|-------|------------|
-| [LMA Clause Identification](https://github.com/harshalbhambhani/lma-clause-identifier) | DistilBERT, SBERT, Dataiku DSS | 90% audit time reduction, 98.6% recall |
-| [AutoTransFlow](https://github.com/harshalbhambhani/autotransflow) | NLLB-200, doc-layout-yolo, PyMuPDF | 200-language layout-preserving translation |
-| [RAG Chatbot](https://github.com/harshalbhambhani/rag-chatbot) | LangChain, FAISS, StableLM Zephyr | Production chatbot over proprietary PDFs |
-| [Medical Bill OCR & Fraud](https://github.com/harshalbhambhani/medical-bill-ocr-fraud) | PaddleOCR, Qwen 7B, OpenCV | 90%+ accuracy, 4-check fraud detection |
-| [Multilingual ASR](https://github.com/harshalbhambhani/multilingual-asr) | Whisper, IndicBERT, pydub | 14% WER reduction for Urdu |
-| [Market Analysis LLM](https://github.com/harshalbhambhani/market-analysis-llm) | BART, RoBERTa, Flask | 500+ articles, real-time sentiment API |
+| [LMA Clause Identification](https://github.com/Harshaaalll/lma-clause-identifier) | DistilBERT, SBERT, Dataiku DSS | 90% audit time reduction, 98.6% recall |
+| [AutoTransFlow](https://github.com/Harshaaalll/autotransflow) | NLLB-200, doc-layout-yolo, PyMuPDF | 200-language layout-preserving translation |
+| [RAG Chatbot](https://github.com/Harshaaalll/rag-chatbot) | LangChain, FAISS, StableLM Zephyr | Production chatbot over proprietary PDFs |
+| [Medical Bill OCR & Fraud](https://github.com/Harshaaalll/medical-bill-ocr-fraud) | PaddleOCR, Qwen 7B, OpenCV | 90%+ accuracy, 4-check fraud detection |
+| [Multilingual ASR](https://github.com/Harshaaalll/multilingual-asr) | Whisper, IndicBERT, pydub | 14% WER reduction for Urdu |
+| [Market Analysis LLM](https://github.com/Harshaaalll/market-analysis-llm) | BART, RoBERTa, Flask | 500+ articles, real-time sentiment API |
 
 ---
 
@@ -58,9 +58,9 @@ Analytics   Power BI · Tableau · Streamlit
 
 ## 📊 GitHub Stats
 
-![Harshal's GitHub Stats](https://github-readme-stats.vercel.app/api?username=harshalbhambhani&show_icons=true&theme=dark&hide_border=true&bg_color=0a0a0f&title_color=7c6af7&text_color=a09e9a&icon_color=4fc3a1)
+![Harshal's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Harshaaalll&show_icons=true&theme=dark&hide_border=true&bg_color=0a0a0f&title_color=7c6af7&text_color=a09e9a&icon_color=4fc3a1)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=harshalbhambhani&layout=compact&theme=dark&hide_border=true&bg_color=0a0a0f&title_color=7c6af7&text_color=a09e9a)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Harshaaalll&layout=compact&theme=dark&hide_border=true&bg_color=0a0a0f&title_color=7c6af7&text_color=a09e9a)
 
 ---
 
