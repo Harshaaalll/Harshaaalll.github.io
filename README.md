@@ -67,7 +67,7 @@ Analytics   Power BI · Tableau · Streamlit
 ## 🎯 Current Focus
 
 - 📌 Actively looking for **Data Scientist / AI Engineer / GenAI** roles starting May 2026
-- 🌍 Open to relocating — Hyderabad → Mumbai/Bangalore/Delhi/Atlanta
+- 🌍 Open to relocating — Hyderabad → Bangalore/Gurgaon/Mumbai
 - 🔬 Deepening expertise in **RAG architectures**, **LLM fine-tuning**, and **production ML deployment**
 
 ---
