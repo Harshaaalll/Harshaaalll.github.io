@@ -229,7 +229,7 @@
 </nav>
 
 <div class="page-header">
-  <div class="page-header-label">// Project Portfolio — 2024 / 2025</div>
+  <div class="page-header-label">Project Portfolio — 2024 / 2025</div>
   <h1>Multiple projects.<br><em>All built to ship.</em></h1>
   <p>Each project below is presented in three layers — a <strong style="color:var(--text)">non-technical TL;DR</strong> for stakeholders, a <strong style="color:var(--text)">visual workflow</strong> showing how the system thinks, and a <strong style="color:var(--text)">deep technical breakdown</strong> for engineers. From NLP pipelines at a global bank to fraud detection, multilingual AI, and speech recognition — every system here was built to be deployed, not just demoed.</p>
   <div class="header-legend">
@@ -269,15 +269,15 @@
   <!-- TL;DR -->
   <div class="tldr-box">
     <div class="tldr-cell problem">
-      <div class="tldr-label">// The Problem</div>
+      <div class="tldr-label">The Problem</div>
       <div class="tldr-text">Auditors at a global bank were manually reading <strong>100+ page loan agreements</strong> to find ~30 specific compliance-critical clauses. One missed sanctions clause = regulatory failure. The work was slow, error-prone, and didn't scale.</div>
     </div>
     <div class="tldr-cell approach">
-      <div class="tldr-label">// The Approach</div>
+      <div class="tldr-label">The Approach</div>
       <div class="tldr-text">Train a small, fast language model (<strong>DistilBERT</strong>) to recognise each clause type, then add a second-stage <strong>semantic search</strong> layer that confirms the match against gold-standard reference clauses. Filter low-confidence predictions before showing to humans.</div>
     </div>
     <div class="tldr-cell impact">
-      <div class="tldr-label">// The Impact</div>
+      <div class="tldr-label">The Impact</div>
       <div class="tldr-text"><strong>90% reduction</strong> in audit time. <strong>98.6% recall</strong> on rare clauses (the ones that matter most). 95%+ of false positives filtered before reaching auditors. Legal team can review <strong>10× more agreements</strong> in the same window.</div>
     </div>
   </div>
@@ -463,15 +463,15 @@
 
   <div class="tldr-box">
     <div class="tldr-cell problem">
-      <div class="tldr-label">// The Problem</div>
+      <div class="tldr-label">The Problem</div>
       <div class="tldr-text">Legal documents must be readable across 200+ jurisdictions. Google Translate destroys layout (turns tables into paragraphs) — and bank policy <strong>forbids sending sensitive PDFs to external APIs</strong>. We needed a translator that runs internally and preserves every visual structure.</div>
     </div>
     <div class="tldr-cell approach">
-      <div class="tldr-label">// The Approach</div>
+      <div class="tldr-label">The Approach</div>
       <div class="tldr-text">Treat each PDF page as an <strong>image first, text second</strong>. A YOLO-based layout model finds every text block's bounding box; then NLLB-200 translates the text inside each box; finally each translation is re-rendered at its original coordinates.</div>
     </div>
     <div class="tldr-cell impact">
-      <div class="tldr-label">// The Impact</div>
+      <div class="tldr-label">The Impact</div>
       <div class="tldr-text"><strong>200 languages</strong> supported · <strong>0 external API calls</strong> · <strong>100% layout fidelity</strong>. The translated PDF looks identical to the original — same tables, same columns, same signatures — just in the target language.</div>
     </div>
   </div>
@@ -657,15 +657,15 @@
 
   <div class="tldr-box">
     <div class="tldr-cell problem">
-      <div class="tldr-label">// The Problem</div>
+      <div class="tldr-label">The Problem</div>
       <div class="tldr-text">A consulting firm had hundreds of proprietary client PDFs. Analysts wasted hours searching through them for specific facts. They couldn't use ChatGPT — <strong>client confidentiality forbids cloud APIs</strong>.</div>
     </div>
     <div class="tldr-cell approach">
-      <div class="tldr-label">// The Approach</div>
+      <div class="tldr-label">The Approach</div>
       <div class="tldr-text">Build a chatbot that <strong>retrieves before it generates</strong>. Embed all PDFs into a local vector database, retrieve the most relevant chunks for each question, and let a small local LLM produce a grounded answer — with <strong>full conversation memory</strong>.</div>
     </div>
     <div class="tldr-cell impact">
-      <div class="tldr-label">// The Impact</div>
+      <div class="tldr-label">The Impact</div>
       <div class="tldr-text">Analysts query proprietary docs in seconds. <strong>Zero data leaves the network.</strong> Multi-turn dialogue means follow-up questions like "and what about the fees?" work naturally. Runs on standard hardware via 4-bit quantisation.</div>
     </div>
   </div>
@@ -864,15 +864,15 @@
 
   <div class="tldr-box">
     <div class="tldr-cell problem">
-      <div class="tldr-label">// The Problem</div>
+      <div class="tldr-label">The Problem</div>
       <div class="tldr-text">Insurance companies process millions of scanned hospital bills. Manual review is slow; fraudsters exploit this with <strong>inflated totals, duplicated submissions, and impossible service combinations</strong>. We needed an automated triage system.</div>
     </div>
     <div class="tldr-cell approach">
-      <div class="tldr-label">// The Approach</div>
+      <div class="tldr-label">The Approach</div>
       <div class="tldr-text">Two-stage pipeline. Stage 1: <strong>aggressive image cleanup → OCR → LLM extraction</strong> turns noisy scans into clean JSON. Stage 2: <strong>four independent fraud checks</strong> vote on a risk score that routes the claim to ACCEPT / REVIEW / REJECT.</div>
     </div>
     <div class="tldr-cell impact">
-      <div class="tldr-label">// The Impact</div>
+      <div class="tldr-label">The Impact</div>
       <div class="tldr-text"><strong>90%+ extraction accuracy</strong> on degraded scans. Four fraud signals catch issues a single check would miss. Risk-scored output means humans only spend time on the <strong>actually suspicious 10%</strong> — not all 100%.</div>
     </div>
   </div>
@@ -1095,15 +1095,15 @@
 
   <div class="tldr-box">
     <div class="tldr-cell problem">
-      <div class="tldr-label">// The Problem</div>
+      <div class="tldr-label">The Problem</div>
       <div class="tldr-text">Speech recognition for English is excellent. For low-resource languages like <strong>Urdu</strong>, it's poor — and there's not enough labelled data to train a new model from scratch. We needed a working Urdu transcriber without millions of labelled hours.</div>
     </div>
     <div class="tldr-cell approach">
-      <div class="tldr-label">// The Approach</div>
+      <div class="tldr-label">The Approach</div>
       <div class="tldr-text">Use Whisper <strong>zero-shot</strong> for the acoustic part, then fix its mistakes using a <strong>second model that understands Urdu language</strong>. IndicBERT acts as a linguistic spell-checker over the transcript, replacing phonetically-similar words that don't fit the context.</div>
     </div>
     <div class="tldr-cell impact">
-      <div class="tldr-label">// The Impact</div>
+      <div class="tldr-label">The Impact</div>
       <div class="tldr-text"><strong>14% reduction in Word Error Rate</strong> over baseline Whisper alone. Pipeline works on noisy real-world recordings thanks to the audio cleanup stage. Generalisable architecture — swap IndicBERT for any MLM and it works for other languages.</div>
     </div>
   </div>
@@ -1310,15 +1310,15 @@
 
   <div class="tldr-box">
     <div class="tldr-cell problem">
-      <div class="tldr-label">// The Problem</div>
+      <div class="tldr-label">The Problem</div>
       <div class="tldr-text">Markets move on news, but no human can read 500+ articles a day. Existing sentiment APIs are either too generic (consumer Twitter sentiment) or too expensive at scale. We needed a <strong>financial-domain pipeline</strong> running locally.</div>
     </div>
     <div class="tldr-cell approach">
-      <div class="tldr-label">// The Approach</div>
+      <div class="tldr-label">The Approach</div>
       <div class="tldr-text">Three-stage pipeline. Scrape with BeautifulSoup. Summarise with <strong>two-pass BART</strong> (handles articles longer than the model's 1024-token limit). Score with <strong>RoBERTa</strong> trained on financial text — using a continuous compound score, not a discrete class.</div>
     </div>
     <div class="tldr-cell impact">
-      <div class="tldr-label">// The Impact</div>
+      <div class="tldr-label">The Impact</div>
       <div class="tldr-text"><strong>500+ articles/day</strong> processed. <strong>70% length reduction</strong> via summarisation while keeping financial signals. Real-time API + Streamlit dashboard surfaces sentiment trends live. SMOTE applied <em>correctly</em> — only on training data, no leakage.</div>
     </div>
   </div>
