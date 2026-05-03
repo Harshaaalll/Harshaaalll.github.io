@@ -3,7 +3,7 @@
 **Data Analyst · Data Scientist · AI Engineer · BITS Hyderabad EEE 2026**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/harshal-bhambhani-hhbb24)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](https://Harshaaalll.github.io)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](https://Harshaaalll.github.io/index2.html)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:f20221809@hyderabad.bits-pilani.ac.in)
 
 ---
