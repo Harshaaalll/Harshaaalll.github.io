@@ -421,8 +421,9 @@
       <div class="info-block-title">Key results</div>
       <ul class="info-list">
         <li><strong>Prompt pruning:</strong> 806 to 455 tokens; decision 120/120 (static) vs 119/120 (pruned); account-disclosure check 118/120 vs 115/120, within noise</li>
+        <li><strong>RAG costs accuracy here:</strong> on 40 scenarios the decision was right 40/40 with the full static prompt, 39/40 pruned, and 31/40 with retrieved policy; context recall was only 0.39 (95% CI 0.26 to 0.53)</li>
         <li><strong>Metric blind spot:</strong> BLEU scored a wrong-amount translation about 0.90; a fact check catches it</li>
-        <li><strong>Process:</strong> an independent test agent found 20 defects across three slices before they were merged</li>
+        <li><strong>Process:</strong> an independent test agent found 29 issues across four slices (24 defects, 5 minor) before they were merged</li>
         <li><strong>Stack:</strong> Python, FastAPI, PostgreSQL with pgvector, Redis, Docker Compose, Langfuse, GitHub Actions, promptfoo</li>
       </ul>
     </div>
