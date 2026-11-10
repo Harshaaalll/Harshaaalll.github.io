@@ -231,6 +231,7 @@
   .proj-15 .metric-val { color: var(--accent2); }
   .proj-16 .metric-val { color: var(--accent3); }
   .proj-17 .metric-val { color: var(--accent5); }
+  .proj-18 .metric-val { color: var(--accent2); }
 
   footer { padding: 2rem 3rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
   footer p { font-size: 0.72rem; color: var(--text3); }
@@ -247,7 +248,7 @@
 <div class="page-header">
   <div class="page-header-label">Project Portfolio — 2024 / 2026</div>
   <h1>Multiple projects.<br><em>All built to ship.</em></h1>
-  <p>Each project below is presented in three layers — a <strong style="color:var(--text)">non-technical TL;DR</strong> for stakeholders, a <strong style="color:var(--text)">visual workflow</strong> showing how the system thinks, and a <strong style="color:var(--text)">deep technical breakdown</strong> for engineers. 14 projects spanning NLP pipelines at a global bank, knowledge-graph RAG for legal AI, real estate analytics, career AI platforms, fraud detection, and speech recognition — every system here was built to be deployed, not just demoed.</p>
+  <p>Each project below is presented in three layers — a <strong style="color:var(--text)">non-technical TL;DR</strong> for stakeholders, a <strong style="color:var(--text)">visual workflow</strong> showing how the system thinks, and a <strong style="color:var(--text)">deep technical breakdown</strong> for engineers. 18 projects spanning NLP pipelines at a global bank, knowledge-graph RAG for legal AI, real estate analytics, career AI platforms, fraud detection, and speech recognition — every system here was built to be deployed, not just demoed.</p>
   <div class="header-legend">
     <div class="legend-item"><span class="legend-dot" style="background:var(--accent4);"></span>Problem framing</div>
     <div class="legend-item"><span class="legend-dot" style="background:var(--accent);"></span>Approach &amp; architecture</div>
@@ -257,29 +258,199 @@
 </div>
 
 <div class="project-nav">
-  <a href="#voice-agent-audit" class="proj-nav-btn">01 · Voice Agent Audit</a>
-  <a href="#sanwaad" class="proj-nav-btn">02 · Sanwaad</a>
-  <a href="#stanchart" class="proj-nav-btn">03 · LMA Clause Tool</a>
-  <a href="#autotrans" class="proj-nav-btn">04 · AutoTransFlow</a>
-  <a href="#dgliger" class="proj-nav-btn">05 · RAG Chatbot</a>
-  <a href="#ocr" class="proj-nav-btn">06 · Medical Bill OCR</a>
-  <a href="#asr" class="proj-nav-btn">07 · Multilingual ASR</a>
-  <a href="#market" class="proj-nav-btn">08 · Market Analysis</a>
-  <a href="#opsagent" class="proj-nav-btn">09 · OpsAgent</a>
-  <a href="#audit-insight" class="proj-nav-btn">10 · Audit Insight</a>
-  <a href="#career-copilot" class="proj-nav-btn">11 · Career Copilot</a>
-  <a href="#airfare-ml" class="proj-nav-btn">12 · AirFare-ML</a>
-  <a href="#hasthkala-setu" class="proj-nav-btn">13 · Hastkala Setu</a>
-  <a href="#road-safety" class="proj-nav-btn">14 · Road Safety NLP</a>
-  <a href="#hydera-analytics" class="proj-nav-btn">15 · HydRERA Analytics</a>
-  <a href="#kg-rag" class="proj-nav-btn">16 · KG-RAG Legal AI</a>
-  <a href="#stemcells-dbms" class="proj-nav-btn">17 · StemCells DBMS</a>
+  <a href="#regrag" class="proj-nav-btn">01 · RegRAG</a>
+  <a href="#voice-agent-audit" class="proj-nav-btn">02 · Voice Agent Audit</a>
+  <a href="#sanwaad" class="proj-nav-btn">03 · Sanwaad</a>
+  <a href="#stanchart" class="proj-nav-btn">04 · LMA Clause Tool</a>
+  <a href="#autotrans" class="proj-nav-btn">05 · AutoTransFlow</a>
+  <a href="#dgliger" class="proj-nav-btn">06 · RAG Chatbot</a>
+  <a href="#ocr" class="proj-nav-btn">07 · Medical Bill OCR</a>
+  <a href="#asr" class="proj-nav-btn">08 · Multilingual ASR</a>
+  <a href="#market" class="proj-nav-btn">09 · Market Analysis</a>
+  <a href="#opsagent" class="proj-nav-btn">10 · OpsAgent</a>
+  <a href="#audit-insight" class="proj-nav-btn">11 · Audit Insight</a>
+  <a href="#career-copilot" class="proj-nav-btn">12 · Career Copilot</a>
+  <a href="#airfare-ml" class="proj-nav-btn">13 · AirFare-ML</a>
+  <a href="#hasthkala-setu" class="proj-nav-btn">14 · Hastkala Setu</a>
+  <a href="#road-safety" class="proj-nav-btn">15 · Road Safety NLP</a>
+  <a href="#hydera-analytics" class="proj-nav-btn">16 · HydRERA Analytics</a>
+  <a href="#kg-rag" class="proj-nav-btn">17 · KG-RAG Legal AI</a>
+  <a href="#stemcells-dbms" class="proj-nav-btn">18 · StemCells DBMS</a>
+</div>
+
+<!-- =========================================================
+     PROJECT 1 — REGRAG
+========================================================= -->
+<div class="project-section proj-18" id="regrag">
+  <div class="proj-header">
+    <div>
+      <div class="proj-number">Project 1 · Personal Project · Nov 2026</div>
+      <div class="proj-title">RegRAG:<br>RBI Banking-Regulation RAG Benchmark</div>
+      <div class="proj-subtitle">A question-answering tool and benchmark for RBI banking rules. It answers with page citations, says "not found" when the documents do not support an answer, and compares six RAG designs on the same questions.</div>
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag tag-nlp">RAG</span>
+      <span class="proj-tag tag-llm">Evals</span>
+      <span class="proj-tag tag-data">Regulatory AI</span>
+    </div>
+  </div>
+
+  <div class="tldr-box">
+    <div class="tldr-cell problem">
+      <div class="tldr-label">The Problem</div>
+      <div class="tldr-text">Banking regulation is a hard test for RAG: long documents, clauses that cross-reference each other, tables, amendments, and answers where a wrong reply is costly. <strong>Most RAG demos show one pipeline working, and none says where it fails.</strong></div>
+    </div>
+    <div class="tldr-cell approach">
+      <div class="tldr-label">The Approach</div>
+      <div class="tldr-text">Six designs (classic, hybrid, graph, agentic, STAIR-inspired and OKF-style) on <strong>the same questions</strong>, with six techniques added one at a time and scored before and after. An <strong>evidence gate</strong> refuses to answer when the sources do not support it, and everything runs on a CPU-only laptop through Ollama.</div>
+    </div>
+    <div class="tldr-cell impact">
+      <div class="tldr-label">The Impact</div>
+      <div class="tldr-text">Early result: on <strong>26 KYC questions</strong> over a 373-chunk corpus, hybrid retrieval put the right page in the top 5 for <strong>92%</strong> of questions (96% on a looser page match), ahead of BM25 at 85% and dense search at 88%. <strong>The end-to-end benchmark has not been run yet</strong>, so its result tables are empty on purpose.</div>
+    </div>
+  </div>
+
+  <div class="metrics-row">
+    <div class="metric-box"><div class="metric-val">6</div><div class="metric-label">Pipelines compared</div></div>
+    <div class="metric-box"><div class="metric-val">0.92</div><div class="metric-label">Hybrid recall@5 (26 questions)</div></div>
+    <div class="metric-box"><div class="metric-val">57</div><div class="metric-label">Seed golden questions</div></div>
+    <div class="metric-box"><div class="metric-val">49</div><div class="metric-label">Unit tests</div></div>
+  </div>
+
+    <div class="section-sub">System Architecture — Guardrails, retrieval, and an evidence gate</div>
+  <div class="flowchart-wrap">
+    <div class="flowchart-title">Question → guardrails → rewrite → pipeline → rerank → evidence gate → cited answer or "not found"</div>
+    <div class="flowchart-caption">A question is checked for scope and personal data, rewritten, and sent to one of six retrieval designs. The top chunks are reranked, and an evidence gate decides whether the sources really support an answer. If they do not, the system abstains instead of guessing.</div>
+    <svg class="flowchart-svg" viewBox="0 0 1100 400" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arr18" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#4fc3a1"/>
+        </marker>
+        <linearGradient id="g18" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#4fc3a1" stop-opacity="0.15"/>
+          <stop offset="100%" stop-color="#4fc3a1" stop-opacity="0.05"/>
+        </linearGradient>
+      </defs>
+      <rect x="30" y="30" width="210" height="100" rx="8" fill="#1a1a24" stroke="#4fc3a1" stroke-width="1.5"/>
+      <text x="135.0" y="56" text-anchor="middle" fill="#f0eee8" font-size="12" font-weight="700">Question</text>
+      <text x="135.0" y="74" text-anchor="middle" fill="#a09e9a" font-size="10">About RBI Master Directions</text>
+      <text x="135.0" y="90" text-anchor="middle" fill="#a09e9a" font-size="10">"Is an Aadhaar number</text>
+      <text x="135.0" y="106" text-anchor="middle" fill="#a09e9a" font-size="10">mandatory for KYC?"</text>
+      <rect x="290" y="30" width="210" height="100" rx="8" fill="url(#g18)" stroke="#4fc3a1" stroke-width="2"/>
+      <text x="395.0" y="56" text-anchor="middle" fill="#4fc3a1" font-size="12" font-weight="700">Input guardrails</text>
+      <text x="395.0" y="74" text-anchor="middle" fill="#a09e9a" font-size="10">Refuse off-topic questions</text>
+      <text x="395.0" y="90" text-anchor="middle" fill="#a09e9a" font-size="10">Mask Aadhaar, PAN, phone</text>
+      <text x="395.0" y="106" text-anchor="middle" fill="#a09e9a" font-size="10">No legal or financial advice</text>
+      <rect x="550" y="30" width="210" height="100" rx="8" fill="url(#g18)" stroke="#4fc3a1" stroke-width="2"/>
+      <text x="655.0" y="56" text-anchor="middle" fill="#4fc3a1" font-size="12" font-weight="700">Query rewriting</text>
+      <text x="655.0" y="74" text-anchor="middle" fill="#a09e9a" font-size="10">Clearer standalone query</text>
+      <text x="655.0" y="90" text-anchor="middle" fill="#a09e9a" font-size="10">added as one measured</text>
+      <text x="655.0" y="106" text-anchor="middle" fill="#a09e9a" font-size="10">technique, not assumed</text>
+      <rect x="810" y="30" width="210" height="100" rx="8" fill="url(#g18)" stroke="#4fc3a1" stroke-width="2"/>
+      <text x="915.0" y="56" text-anchor="middle" fill="#4fc3a1" font-size="12" font-weight="700">Six pipelines</text>
+      <text x="915.0" y="74" text-anchor="middle" fill="#a09e9a" font-size="10">Classic · Hybrid · Graph</text>
+      <text x="915.0" y="90" text-anchor="middle" fill="#a09e9a" font-size="10">Agentic · STAIR-inspired</text>
+      <text x="915.0" y="106" text-anchor="middle" fill="#a09e9a" font-size="10">OKF-style</text>
+      <text x="915.0" y="122" text-anchor="middle" fill="#f5a623" font-size="10" font-style="italic">same questions for all</text>
+      <path d="M 240 80 L 290 80" fill="none" stroke="#4fc3a1" stroke-width="1.5" marker-end="url(#arr18)"/>
+      <path d="M 500 80 L 550 80" fill="none" stroke="#4fc3a1" stroke-width="1.5" marker-end="url(#arr18)"/>
+      <path d="M 760 80 L 810 80" fill="none" stroke="#4fc3a1" stroke-width="1.5" marker-end="url(#arr18)"/>
+      <path d="M 915 130 V 175 H 135 V 220" fill="none" stroke="#4fc3a1" stroke-width="1.5" marker-end="url(#arr18)"/>
+      <rect x="30" y="220" width="210" height="110" rx="8" fill="url(#g18)" stroke="#4fc3a1" stroke-width="2"/>
+      <text x="135.0" y="246" text-anchor="middle" fill="#4fc3a1" font-size="12" font-weight="700">Top chunks + metadata</text>
+      <text x="135.0" y="264" text-anchor="middle" fill="#a09e9a" font-size="10">BM25 + bge-m3 embeddings</text>
+      <text x="135.0" y="280" text-anchor="middle" fill="#a09e9a" font-size="10">fused by RRF</text>
+      <text x="135.0" y="296" text-anchor="middle" fill="#a09e9a" font-size="10">document, chapter, date</text>
+      <text x="135.0" y="312" text-anchor="middle" fill="#f5a623" font-size="10" font-style="italic">hybrid recall@5 0.92</text>
+      <rect x="290" y="220" width="210" height="110" rx="8" fill="url(#g18)" stroke="#4fc3a1" stroke-width="2"/>
+      <text x="395.0" y="246" text-anchor="middle" fill="#4fc3a1" font-size="12" font-weight="700">Reranker</text>
+      <text x="395.0" y="264" text-anchor="middle" fill="#a09e9a" font-size="10">bge-reranker-v2-m3</text>
+      <text x="395.0" y="280" text-anchor="middle" fill="#a09e9a" font-size="10">reorders the top 20</text>
+      <text x="395.0" y="296" text-anchor="middle" fill="#a09e9a" font-size="10">low score can stop early</text>
+      <text x="395.0" y="312" text-anchor="middle" fill="#f5a623" font-size="10" font-style="italic">threshold not tuned yet</text>
+      <rect x="550" y="220" width="210" height="110" rx="8" fill="url(#g18)" stroke="#4fc3a1" stroke-width="2"/>
+      <text x="655.0" y="246" text-anchor="middle" fill="#4fc3a1" font-size="12" font-weight="700">Evidence gate</text>
+      <text x="655.0" y="264" text-anchor="middle" fill="#a09e9a" font-size="10">NLI check on each claim</text>
+      <text x="655.0" y="280" text-anchor="middle" fill="#a09e9a" font-size="10">LLM-judge fallback</text>
+      <text x="655.0" y="296" text-anchor="middle" fill="#a09e9a" font-size="10">number-grounding check</text>
+      <text x="655.0" y="312" text-anchor="middle" fill="#f5a623" font-size="10" font-style="italic">abstain over guess</text>
+      <rect x="810" y="220" width="210" height="110" rx="8" fill="#1a1a24" stroke="#4fc3a1" stroke-width="1.5"/>
+      <text x="915.0" y="246" text-anchor="middle" fill="#f0eee8" font-size="12" font-weight="700">Answer or "not found"</text>
+      <text x="915.0" y="264" text-anchor="middle" fill="#a09e9a" font-size="10">Document and page citation</text>
+      <text x="915.0" y="280" text-anchor="middle" fill="#a09e9a" font-size="10">"Updated as on" date shown</text>
+      <text x="915.0" y="296" text-anchor="middle" fill="#a09e9a" font-size="10">stale-source warning</text>
+      <text x="915.0" y="312" text-anchor="middle" fill="#f5a623" font-size="10" font-style="italic">no unsupported claims</text>
+      <path d="M 240 275 L 290 275" fill="none" stroke="#4fc3a1" stroke-width="1.5" marker-end="url(#arr18)"/>
+      <path d="M 500 275 L 550 275" fill="none" stroke="#4fc3a1" stroke-width="1.5" marker-end="url(#arr18)"/>
+      <path d="M 760 275 L 810 275" fill="none" stroke="#4fc3a1" stroke-width="1.5" marker-end="url(#arr18)"/>
+      <text x="550" y="372" text-anchor="middle" fill="#6a6860" font-size="10" font-style="italic">Early development: the gate and guardrails are unit-tested with fake models and not yet measured end to end.</text>
+    </svg>
+  </div>
+
+  <div class="section-sub">Step-by-step workflow</div>
+  <div class="workflow-steps">
+    <div class="wf-step">
+      <div class="wf-step-num">01</div>
+      <div class="wf-step-title">Corpus and chunking</div>
+      <div class="wf-step-desc">14 RBI Master Directions registered with source URL, date, page count and SHA-256 (RBI blocks scripted downloads, so files are saved by hand). Four are indexed so far, split by chapter and clause with document, chapter, date and amended-flag metadata.</div>
+      <div class="wf-step-tech">Python · ChromaDB · MANIFEST.json</div>
+    </div>
+    <div class="wf-step">
+      <div class="wf-step-num">02</div>
+      <div class="wf-step-title">Retrieval and reranking</div>
+      <div class="wf-step-desc">BM25 keyword search and bge-m3 dense search fused by reciprocal rank fusion, then reordered by a cross-encoder reranker. Classic and hybrid pipelines are written; graph, agentic, STAIR-inspired and OKF-style follow.</div>
+      <div class="wf-step-tech">rank-bm25 · bge-m3 · bge-reranker-v2-m3</div>
+    </div>
+    <div class="wf-step">
+      <div class="wf-step-num">03</div>
+      <div class="wf-step-title">Evidence gate and guardrails</div>
+      <div class="wf-step-desc">Answers need a document and page citation or the system abstains. Retrieved text is treated as data, never as instructions. Personal numbers are masked in inputs and logs, and a 20-item safety set covers advice, off-topic, injection and stale-source cases.</div>
+      <div class="wf-step-tech">NLI · LLM judge · config.yaml</div>
+    </div>
+    <div class="wf-step">
+      <div class="wf-step-num">04</div>
+      <div class="wf-step-title">Evaluation</div>
+      <div class="wf-step-desc">A tagged golden set (lookup, table, multi-hop, amendment, unanswerable) with a seeded train/test split, so thresholds are tuned on one half and reported on the other. RAGAS and DeepEval are planned in GitHub Actions with thresholds.</div>
+      <div class="wf-step-tech">RAGAS · DeepEval · GitHub Actions</div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="info-block">
+      <div class="info-block-title">Technical decisions</div>
+      <ul class="info-list">
+        <li><strong>Measure, don't claim:</strong> six techniques (chunking, metadata, hybrid search, query rewriting, reranking, strict prompt) are added one at a time with a before and after score, and the results tables stay empty until a number is measured.</li>
+        <li><strong>Abstain over guess:</strong> an evidence gate refuses to answer when the retrieved sources do not support it, and every claim needs a document and page citation.</li>
+        <li><strong>Local first:</strong> query time runs on a CPU-only laptop with Ollama (qwen3:4b). Cloud models are optional, used only for one-time indexing or judging, and flagged wherever used.</li>
+        <li><strong>Honest evaluation:</strong> every golden question is checked against the source PDF page by an LLM, not a human, and the README says so.</li>
+      </ul>
+    </div>
+    <div class="info-block">
+      <div class="info-block-title">Key results (early)</div>
+      <ul class="info-list">
+        <li><strong>Retrieval check, 26 questions, 373 chunks, recall@5 (strict / loose):</strong> BM25 0.85 / 0.96, dense 0.88 / 0.92, hybrid 0.92 / 0.96, hybrid with reranker 0.92 / 0.96</li>
+        <li><strong>At rank 1:</strong> hybrid 0.69 / 0.88 against 0.58 / 0.69 for BM25 alone</li>
+        <li><strong>Reranker limit:</strong> it only reorders the same 20 candidates, so it cannot raise recall at 20</li>
+        <li><strong>Smoke test, not a measurement:</strong> with a small qwen3:1.7b model, 1 lookup was answered with a page citation, 3 unanswerable questions were correctly refused, and 1 multi-hop question was wrongly refused</li>
+        <li><strong>Stack:</strong> Python, Ollama, bge-m3, ChromaDB, rank-bm25, FastAPI, GitHub Actions; planned: LightRAG, RAGAS, DeepEval</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="insight-box">
+    <div class="insight-label">Key Insight</div>
+    <div class="insight-text"><strong>Treat the differences between retrieval rows as noise.</strong> Only 26 questions were used (one question is about 4 points), the corpus is small, the questions follow the document's own wording, and the gold pages were checked by an LLM rather than a person. The full benchmark across all six pipelines has not been run, and the project is in early development.</div>
+  </div>
+
+  <a href="https://github.com/Harshaaalll/regrag" target="_blank" class="github-link">
+    ⊕  View on GitHub  →  github.com/Harshaaalll/regrag
+  </a>
 </div>
 
 <div class="project-section proj-17" id="voice-agent-audit">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 1 · Personal Project · Oct 2026</div>
+      <div class="proj-number">Project 2 · Personal Project · Oct 2026</div>
       <div class="proj-title">Voice Agent Audit:<br>Evaluating a Hinglish Voice Agent</div>
       <div class="proj-subtitle">Evaluation and audit kit for a Hinglish payment-reminder voice agent: rule checks, an LLM judge checked against human labels, hybrid retrieval evals, and a FastAPI service on PostgreSQL with pgvector.</div>
     </div>
@@ -445,7 +616,7 @@
 <div class="project-section proj-15" id="sanwaad">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 2 · Personal Project · Sep 2026</div>
+      <div class="proj-number">Project 3 · Personal Project · Sep 2026</div>
       <div class="proj-title">Sanwaad:<br>Multi-Agent Complaint Resolution</div>
       <div class="proj-subtitle">Multi-agent complaint resolution with human-approved actions and trace-level evals. LangGraph · Gemini · hybrid RAG.</div>
     </div>
@@ -617,7 +788,7 @@
 <div class="project-section proj-1" id="stanchart">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 3 · Standard Chartered GBS · Jul–Dec 2025</div>
+      <div class="proj-number">Project 4 · Standard Chartered GBS · Jul–Dec 2025</div>
       <div class="proj-title">LMA Clause<br>Identification Tool</div>
       <div class="proj-subtitle">A production NLP pipeline on Dataiku DSS that reads 100+ page Loan Market Association agreements and automatically flags every legally-significant clause — sanctions, indemnities, governing law — that compliance auditors must review. Ships with confidence calibration, semantic search, and an auditor-friendly threshold tuning UI.</div>
     </div>
@@ -812,7 +983,7 @@
 <div class="project-section proj-2" id="autotrans">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 4 · Standard Chartered GBS · Aug–Nov 2025</div>
+      <div class="proj-number">Project 5 · Standard Chartered GBS · Aug–Nov 2025</div>
       <div class="proj-title">AutoTransFlow:<br>Multilingual Document AI</div>
       <div class="proj-subtitle">A layout-preserving multilingual PDF translation system. Translates financial and legal documents into 200 languages while keeping the exact spatial structure — headings, tables, columns, signatures — intact. Runs entirely on local models with zero external API calls.</div>
     </div>
@@ -1006,7 +1177,7 @@
 <div class="project-section proj-3" id="dgliger">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 5 · DG Liger Consulting · Jun–Jul 2024</div>
+      <div class="proj-number">Project 6 · DG Liger Consulting · Jun–Jul 2024</div>
       <div class="proj-title">RAG Chatbot with<br>Conversational Memory</div>
       <div class="proj-subtitle">Production retrieval-augmented generation chatbot built over proprietary PDF documents. Multi-turn conversation support via LangChain's ConversationalRetrievalChain, with local StableLM Zephyr 3B inference — no external API calls, no data leakage.</div>
     </div>
@@ -1213,7 +1384,7 @@
 <div class="project-section proj-4" id="ocr">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 6 · Datathon · November 2025</div>
+      <div class="proj-number">Project 7 · Datathon · November 2025</div>
       <div class="proj-title">Medical Bill OCR &amp;<br>Fraud Detection</div>
       <div class="proj-subtitle">An end-to-end pipeline for extracting structured data from scanned hospital bills and automatically detecting fraudulent claims using four independent anomaly-detection algorithms running in parallel.</div>
     </div>
@@ -1444,7 +1615,7 @@
 <div class="project-section proj-5" id="asr">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 7 · BITS Hyderabad · Aug–Nov 2024</div>
+      <div class="proj-number">Project 8 · BITS Hyderabad · Aug–Nov 2024</div>
       <div class="proj-title">Multilingual ASR<br>in Low-Resource Languages</div>
       <div class="proj-subtitle">Automatic speech recognition for Urdu — a low-resource language. Zero-shot Whisper transcription with a two-stage post-processing pipeline including IndicBERT-based MLM error correction.</div>
     </div>
@@ -1659,7 +1830,7 @@
 <div class="project-section proj-6" id="market">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 8 · Independent · Jun–Jul 2024</div>
+      <div class="proj-number">Project 9 · Independent · Jun–Jul 2024</div>
       <div class="proj-title">Market Analysis<br>Using LLMs</div>
       <div class="proj-subtitle">An automated financial news sentiment pipeline. Scrapes, summarises, and analyses 500+ articles using BART and RoBERTa, producing real-time sentiment scores served via a Flask API with a Streamlit dashboard.</div>
     </div>
@@ -1861,7 +2032,7 @@
 <div class="project-section proj-16" id="opsagent">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 9 · Personal Project · 2026</div>
+      <div class="proj-number">Project 10 · Personal Project · 2026</div>
       <div class="proj-title">OpsAgent:<br>Autonomous Browser Operator</div>
       <div class="proj-subtitle">Autonomous AI operator: plan-act-verify loop over a real browser, with approval gates and independent verification.</div>
     </div>
@@ -2029,7 +2200,7 @@
 <div class="project-section proj-7" id="audit-insight">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 10 · Personal Project · 2025</div>
+      <div class="proj-number">Project 11 · Personal Project · 2025</div>
       <div class="proj-title">Audit Insight:<br>NLP Analytics for Audits</div>
       <div class="proj-subtitle">An end-to-end NLP pipeline that ingests raw audit observations, findings, and recommendations — then automatically classifies sentiment, discovers latent topics, and clusters similar documents for rapid triage. Built for teams that need to surface risk patterns from thousands of audit texts in minutes, not weeks.</div>
     </div>
@@ -2202,7 +2373,7 @@
 <div class="project-section proj-8" id="career-copilot">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 11 · Personal Project · 2025</div>
+      <div class="proj-number">Project 12 · Personal Project · 2025</div>
       <div class="proj-title">Career Copilot 2.0:<br>AI Job Search OS</div>
       <div class="proj-subtitle">Not just another job tracker — a complete Career Operating System that transforms job search from scattered applications into a data-driven, AI-optimized conversion funnel. 11 intelligent modules powered by LangChain + FAISS + Groq LLaMA 3.</div>
     </div>
@@ -2390,7 +2561,7 @@
 <div class="project-section proj-9" id="airfare-ml">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 12 · Personal Project · 2025</div>
+      <div class="proj-number">Project 13 · Personal Project · 2025</div>
       <div class="proj-title">AirFare-ML:<br>Airline Price Prediction</div>
       <div class="proj-subtitle">A production-grade machine learning system that predicts domestic airline ticket prices in India. 6 regression algorithms, advanced feature engineering, and Bayesian hyperparameter optimization. LightGBM achieves 93.91% R² with ₹689 MAE.</div>
     </div>
@@ -2583,7 +2754,7 @@
 <div class="project-section proj-10" id="hasthkala-setu">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 13 · BITS Pilani Design Project · 2025–2026</div>
+      <div class="proj-number">Project 14 · BITS Pilani Design Project · 2025–2026</div>
       <div class="proj-title">Hastkala Setu:<br>Tradition × Technology</div>
       <div class="proj-subtitle">Dual-component academic project: ML pipeline for cross-cultural conflict resolution analysis (MANOVA, XGBoost, SHAP) + Flutter mobile app for Indian handicraft artisans with Hindi voice input.</div>
     </div>
@@ -2776,7 +2947,7 @@
 <div class="project-section proj-11" id="road-safety">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 14 · BITS Pilani Design Project · 2024–2025</div>
+      <div class="proj-number">Project 15 · BITS Pilani Design Project · 2024–2025</div>
       <div class="proj-title">Road Safety NLP:<br>Accident Severity Analysis</div>
       <div class="proj-subtitle">NLP-based classification of road accident severity from news articles. 4 data collection phases, 8 Hyderabad news outlets, spaCy NER for location extraction.</div>
     </div>
@@ -2963,7 +3134,7 @@
 <div class="project-section proj-12" id="hydera-analytics">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 15 · Personal Project · 2025</div>
+      <div class="proj-number">Project 16 · Personal Project · 2025</div>
       <div class="proj-title">HydRERA Analytics:<br>Real Estate Intelligence</div>
       <div class="proj-subtitle">End-to-end data analytics platform for Hyderabad real estate. ELT pipeline (Python → PostgreSQL → dbt) powering four analytical modules with Power BI dashboards and ML-driven delay prediction.</div>
     </div>
@@ -3156,7 +3327,7 @@
 <div class="project-section proj-13" id="kg-rag">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 16 · BITS Pilani Study Project · 2026</div>
+      <div class="proj-number">Project 17 · BITS Pilani Study Project · 2026</div>
       <div class="proj-title">Knowledge Graph RAG:<br>Legal AI for Indian Courts</div>
       <div class="proj-subtitle">Hybrid pipeline: Neo4j legal knowledge graph, Vespa hybrid search (BM25 + InLegalBERT), IRAC-constrained Mistral 7B. Benchmarked against GraphMERT on 1,000-case corpus.</div>
     </div>
@@ -3341,7 +3512,7 @@
 <div class="project-section proj-14" id="stemcells-dbms">
   <div class="proj-header">
     <div>
-      <div class="proj-number">Project 17 · Course Project · 2024</div>
+      <div class="proj-number">Project 18 · Course Project · 2024</div>
       <div class="proj-title">StemCells DBMS:<br>Donor Management System</div>
       <div class="proj-subtitle">Full-stack donor, patient, hospital, and staff management system. Flask + MySQL with dynamic dashboard and real-time entity counting.</div>
     </div>
