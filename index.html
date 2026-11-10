@@ -623,7 +623,7 @@
         <div class="stat-label">Audit time reduced</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num">18</div>
+        <div class="stat-num">19</div>
         <div class="stat-label">Projects built</div>
       </div>
       <div class="stat-item">
@@ -658,7 +658,7 @@
       </p>
       <p>
         Since August 2026 I have been an <strong>AI Engineer at OTO Capital</strong>, building live voice agents
-        for lending clients, after a short consulting engagement at <strong>Goel Exports</strong> on their Odoo workflow.
+        for lending clients including Jana Small Finance Bank, Swarnodhayam MFI, Fusion MFI, Seed Fincap and Satin, after a short consulting engagement at <strong>Goel Exports</strong> on their Odoo workflow.
       </p>
       <p>
         I don't just build models. I build <strong>systems that get deployed</strong>, used, and measured.
@@ -713,6 +713,17 @@
         <span class="skill-tag">Flask</span>
         <span class="skill-tag">InLegalBERT</span>
         <span class="skill-tag">Vespa</span>
+        <span class="skill-tag">OpenAI API</span>
+        <span class="skill-tag">Vertex AI</span>
+        <span class="skill-tag">LLM-as-Judge</span>
+        <span class="skill-tag">A/B Testing</span>
+        <span class="skill-tag">Context Caching</span>
+        <span class="skill-tag">Exotel</span>
+        <span class="skill-tag">asyncpg</span>
+        <span class="skill-tag">GCP</span>
+        <span class="skill-tag">AWS RDS</span>
+        <span class="skill-tag">Ollama</span>
+        <span class="skill-tag">ChromaDB</span>
       </div>
     </div>
     <div class="about-right">
@@ -770,12 +781,13 @@
         </div>
         <div class="exp-org">OTO Capital · Bangalore</div>
         <ul class="exp-bullets">
-          <li>Built a production Gemini Live voice agent on Pipecat and FastAPI, serving 5 client deployments across 10 languages</li>
-          <li>Moved negotiation rules out of the prompt into a deterministic Python gate that approves or refuses the model's tool calls before it speaks</li>
-          <li>Test every model change against about 1,300 checks across five suites, plus a 500-call borrower simulator and a 17-persona text simulator</li>
-          <li>Measure agent variants with A/B control arms, isolating behaviour shifts before a production release</li>
-          <li>Cut per-turn prompt cost 79% to 3,490 tokens by moving situational context into tool responses</li>
-          <li>Mined 36,091 call records down to 12 curated training scenes; audited 26 human collector calls against RBI norms and locked 9 prohibited practices into the agent</li>
+          <li>Built a production Gemini Live voice agent on Pipecat and FastAPI for collections calls, delivered to Jana Small Finance Bank, Swarnodhayam MFI, Fusion MFI, Seed Fincap and Satin in 10 languages</li>
+          <li>Moved negotiation policy out of the prompt into a deterministic Python gate that approves or refuses the model's tool calls before it speaks</li>
+          <li>Cut per-turn prompt cost 78% (16,558 to 3,596 tokens) by moving situational context into tool responses</li>
+          <li>Pinned each of 49 live-call defects with a regression check (201 at the first milestone, 845 gate checks by October), backed by a seeded simulator that runs 500+ borrower calls per change</li>
+          <li>Measure agent variants with A/B arms assigned by SHA-256, with 33 telemetry fields per call joined to payments</li>
+          <li>Moved post-call analytics from Gemini to OpenAI gpt-6-luna with a per-call Gemini fallback: live for Satin at about ₹0.22 vs ₹0.58 per call across 8,402 calls, with the queue step matching Gemini on 99.1% of 3,110 past calls</li>
+          <li>Mined 36,091 call rows down to 12 curated scenes (same-day promises converted at 14.1% vs 7.3% for next day); audited 26 human collector calls against RBI norms, flagging 17 practices and locking 9 as prohibited</li>
         </ul>
       </div>
     </div>
@@ -854,6 +866,22 @@
         <span class="project-tag">Ollama</span>
       </div>
       <div class="project-result">Hybrid retrieval recall@5 0.92 on 26 questions · 6 pipelines compared · full benchmark in progress</div>
+    </a>
+
+    <a href="portfolio.html#negotiation-gate" class="project-card">
+      <div class="project-header">
+        <div class="project-icon">🎙️</div>
+        <span class="project-arrow">↗</span>
+      </div>
+      <div class="project-title">Collections Voice Agent — Deterministic Negotiation Gate</div>
+      <div class="project-desc">A production Gemini Live agent for loan-collection calls in 10 languages. Negotiation policy lives in a Python gate that approves or refuses each tool call before the model speaks. Delivered for Jana Small Finance Bank, Swarnodhayam MFI, Fusion MFI, Seed Fincap and Satin.</div>
+      <div class="project-tags">
+        <span class="project-tag">Gemini Live</span>
+        <span class="project-tag">Pipecat</span>
+        <span class="project-tag">LLM Evals</span>
+        <span class="project-tag">A/B Testing</span>
+      </div>
+      <div class="project-result">Prompt tokens per turn down 78% (16,558 to 3,596) · 49 live-call defects pinned by 201 regression checks</div>
     </a>
 
     <a href="portfolio.html#voice-agent-audit" class="project-card">
